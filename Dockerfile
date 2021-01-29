@@ -10,7 +10,7 @@ RUN mvn -f /usr/src/app/pom.xml clean package
 #
 FROM openjdk:8
 COPY --from=build /usr/src/app/target/satellite-location-user.jar /usr/local/lib/satellite-location-user.jar
-EXPOSE 8002
+EXPOSE 8000
 ENTRYPOINT ["java","-jar","/usr/local/lib/satellite-location-user.jar"]
 
 
