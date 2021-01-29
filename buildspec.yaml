@@ -10,14 +10,10 @@ phases:
       - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
       - chmod +x kubectl
       - mv ./kubectl /usr/local/bin/kubectl
-      - curl https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
-      - curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-      - chmod 700 get_helm.sh
-      - ./get_helm.sh
   pre_build: # Add kubeconfig to access to EKS cluster
     commands:
       - "mkdir ~/.kube/"
-      - "cp kube/config-$ENV ~/.kube/config"
+      - "cp kube/config ~/.kube/config"
   build: # Build Docker image and tag it with the commit sha
     commands:
       - docker build -t $IMAGE_REPO_NAME:$CODEBUILD_RESOLVED_SOURCE_VERSION .
@@ -26,4 +22,5 @@ phases:
     commands:
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
       - docker push $IMAGE_REPO_NAME:$CODEBUILD_RESOLVED_SOURCE_VERSION
-      - "helm upgrade --install -f location/env/$ENV-values.yaml satellite-location-app-$ENV location/ --set env.containers.image=$IMAGE_REPO_NAME:$CODEBUILD_RESOLVED_SOURCE_VERSION"
+      - kubectl delete -f satellitelocation_deploymentt.yaml
+      - kubectl apply -f satellitelocation_deploymentt.yaml
