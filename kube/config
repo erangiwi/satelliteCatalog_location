@@ -1,0 +1,50 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeE1ERXlOakl3TlRBME1Wb1hEVE14TURFeU5ESXdOVEEwTVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBSzJSClhCcW1hZTg5clptUjlYRm0xYWsvcitwVjFvS2dVNmdZQmRHNzZMY3ZXbllkcGMwSFp0bHA3V2NZZ1pTOUJlSlEKUktOQWxIWlZuc1pkN1Y4M2tBREIrSm84UEVmd1pZTnprZEV0SFFtNWFqQmU5UThlNVFHcjRzUVY1QUc5cVZnRQpvaHFFb0RvR0pKTytaMVhpMFlSVTN1clBVU29RMXAvMU8yTHFRMW1Kb3pDWHltcDZsdzFwTVVaK2REeWpSQzRZCktwYk9RaEk0RXNJbzNBYWtKQVhFUGJIU01qZDhpSUw1TE8rSTFYVzZiY2lZdlMrMkZoZTBYcGRRTVRFMDBheDEKTUthd2MzTEZGU3ZraGdlakxHTzB0ZndLbGo4RmxPOTRreHZndGdpOEo2QXQzWU9hR3pnM21CUzliZWc1aDhZVwpoZjVYNFg0QjRLVWpER2ltZTlVQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFJWGRIRzVtc1lWaCtETUo2RXAxQ0NnT3VnZ1EKNkJQWDQrYjlkRjQ4QUdXVEFqaDZxMTlOVzh6RWhzUlZKUGRLb210elNWRGJURVdEZnptSDZFSkpGUzU2WCtmVApPcW53ckttRHIraXArVnhQd2RiQ2FUOGs2TitPaUVYK0pxQ2NkRHI3d1FDOGRLVHlNSFdZOERtS01nV3Q0bUxPCi9KOUhPSG1JRmp5THVoL3ZuQzd5NTlxTC82bEtxL3FoL1hvMTZtd2tUdE12S2pCanMxcUVkckZSQ2lsbkZsc3IKN2Z4K2ZtTXlNSWlyYWUxZHM0SGZRK09Mdmd1YjNHbzFuUWR1N0wzS3JtUE5IK1YxeGV5Y3dBbkhlcWRvUWpZLwp6SGRaRlM0VUN0ZVNrM3g1YkZZWlBRcnZ6Ny9ZM0FWZmxyeS9WMVpWNlgreGozWHo1WkE2ZGs5Sjl1VT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    server: https://68C9EEDB76605566CC24159D189BF177.gr7.us-east-1.eks.amazonaws.com
+  name: satellite-service.us-east-1.eksctl.io
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeE1ERXlOakl3TlRBME1Wb1hEVE14TURFeU5ESXdOVEEwTVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBSzJSClhCcW1hZTg5clptUjlYRm0xYWsvcitwVjFvS2dVNmdZQmRHNzZMY3ZXbllkcGMwSFp0bHA3V2NZZ1pTOUJlSlEKUktOQWxIWlZuc1pkN1Y4M2tBREIrSm84UEVmd1pZTnprZEV0SFFtNWFqQmU5UThlNVFHcjRzUVY1QUc5cVZnRQpvaHFFb0RvR0pKTytaMVhpMFlSVTN1clBVU29RMXAvMU8yTHFRMW1Kb3pDWHltcDZsdzFwTVVaK2REeWpSQzRZCktwYk9RaEk0RXNJbzNBYWtKQVhFUGJIU01qZDhpSUw1TE8rSTFYVzZiY2lZdlMrMkZoZTBYcGRRTVRFMDBheDEKTUthd2MzTEZGU3ZraGdlakxHTzB0ZndLbGo4RmxPOTRreHZndGdpOEo2QXQzWU9hR3pnM21CUzliZWc1aDhZVwpoZjVYNFg0QjRLVWpER2ltZTlVQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFJWGRIRzVtc1lWaCtETUo2RXAxQ0NnT3VnZ1EKNkJQWDQrYjlkRjQ4QUdXVEFqaDZxMTlOVzh6RWhzUlZKUGRLb210elNWRGJURVdEZnptSDZFSkpGUzU2WCtmVApPcW53ckttRHIraXArVnhQd2RiQ2FUOGs2TitPaUVYK0pxQ2NkRHI3d1FDOGRLVHlNSFdZOERtS01nV3Q0bUxPCi9KOUhPSG1JRmp5THVoL3ZuQzd5NTlxTC82bEtxL3FoL1hvMTZtd2tUdE12S2pCanMxcUVkckZSQ2lsbkZsc3IKN2Z4K2ZtTXlNSWlyYWUxZHM0SGZRK09Mdmd1YjNHbzFuUWR1N0wzS3JtUE5IK1YxeGV5Y3dBbkhlcWRvUWpZLwp6SGRaRlM0VUN0ZVNrM3g1YkZZWlBRcnZ6Ny9ZM0FWZmxyeS9WMVpWNlgreGozWHo1WkE2ZGs5Sjl1VT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    server: https://68C9EEDB76605566CC24159D189BF177.gr7.us-east-1.eks.amazonaws.com
+  name: arn:aws:eks:us-east-1:796460151466:cluster/satellite-service
+contexts:
+- context:
+    cluster: satellite-service.us-east-1.eksctl.io
+    user: iit-lab@satellite-service.us-east-1.eksctl.io
+  name: iit-lab@satellite-service.us-east-1.eksctl.io
+- context:
+    cluster: arn:aws:eks:us-east-1:796460151466:cluster/satellite-service
+    user: arn:aws:eks:us-east-1:796460151466:cluster/satellite-service
+  name: arn:aws:eks:us-east-1:796460151466:cluster/satellite-service
+current-context: arn:aws:eks:us-east-1:796460151466:cluster/satellite-service
+kind: Config
+preferences: {}
+users:
+- name: iit-lab@satellite-service.us-east-1.eksctl.io
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - eks
+      - get-token
+      - --cluster-name
+      - satellite-service
+      - --region
+      - us-east-1
+      command: aws
+      env:
+      - name: AWS_STS_REGIONAL_ENDPOINTS
+        value: regional
+- name: arn:aws:eks:us-east-1:796460151466:cluster/satellite-service
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - us-east-1
+      - eks
+      - get-token
+      - --cluster-name
+      - satellite-service
+      command: aws

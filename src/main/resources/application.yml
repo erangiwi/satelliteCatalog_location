@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    username: spacelocation
+    password: spacelocation
+    url: jdbc:mysql://spacelocation.c7e3pqujvfln.us-east-1.rds.amazonaws.com/spacelocation
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
