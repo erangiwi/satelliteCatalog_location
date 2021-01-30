@@ -12,10 +12,10 @@ spec:
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: erangi123/satellitelocation-user
+        app.kubernetes.io/name: satellite-location-app
     spec:
       containers:
-      - image: erangi123/satellite:main
+      - image: erangi123/satellitelocation-user
         imagePullPolicy: Always
         name: satellite-location-app
         ports:
